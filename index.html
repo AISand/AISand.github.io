@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	<p id="demo"></p>
+
+<script>
+function getRandomColor() { 
+  return (Math.floor(Math.random() * (255 - 10)) + 10);
+}
+
+document.getElementById("demo").innerHTML = "WELCOME TO THE AIDAN ZONE";
+demo.style.fontsize = "large";
+demo.style.fontFamily = "comic sans ms";
+
+(function changeColor(){
+    setInterval( () => {
+      let color = `rgb(${getRandomColor()}, ${getRandomColor()}, ${getRandomColor()})`;
+      demo.style.color = color
+    }, 100);
+})()
+</script> 
+
 		<style>
 			body {
 				background-image: url("https://images5.alphacoders.com/652/652753.png");
@@ -8,5 +27,6 @@
 		</style>
 	</head>
 <body>
+
 </body>
 </html>
