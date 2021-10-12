@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<h1><center>
-	<p id="demo"></p>
+		<h1><center>
+		<p id="demo"></p>
 
-<script>
-function getRandomColor() { 
-  return (Math.floor(Math.random() * (255 - 10)) + 10);
-}
+	<script>
+	function getRandomColor() { 
+	return (Math.floor(Math.random() * (255 - 10)) + 10);
+	}
 
-document.getElementById("demo").innerHTML = "WELCOME TO THE AIDAN ZONE";
-demo.style.fontsize = "large";
-demo.style.fontFamily = "comic sans ms";
+	document.getElementById("demo").innerHTML = "WELCOME TO THE AIDAN ZONE";
+	demo.style.fontsize = "large";
+	demo.style.fontFamily = "comic sans ms";
 
-(function changeColor(){
-    setInterval( () => {
-      let color = `rgb(${getRandomColor()}, ${getRandomColor()}, ${getRandomColor()})`;
-      demo.style.color = color
-    }, 100);
-})()
-</script> 
-</center></h1>
+	(function changeColor(){
+		setInterval( () => {
+		let color = `rgb(${getRandomColor()}, ${getRandomColor()}, ${getRandomColor()})`;
+        let color2 = `rgb(${getRandomColor()}, ${getRandomColor()}, ${getRandomColor()})`;
+        
+        demo.style.backgroundColor = color2;
+		demo.style.color = color
+		
+		}, 100);
+	})()
+	</script> 
+	</center></h1>
 
 		<style>
 			body {
@@ -29,6 +33,5 @@ demo.style.fontFamily = "comic sans ms";
 		</style>
 	</head>
 <body>
-
 </body>
 </html>
